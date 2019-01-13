@@ -68,7 +68,13 @@ function draw() {
   overlay.stroke(0);
   overlay.textSize(15);
   // overlay.background(0, 200, 200);
-  overlay.background(255);
+  overlay.background(0, 200, 200);
+  overlay.stroke(0);
+  overlay.strokeWeight(2);
+  overlay.noFill();
+  overlay.rect(0, 0, 200, 200);
+  overlay.noStroke();
+  overlay.fill(0);
   overlay.textAlign(LEFT);
   overlay.text(
     `Current Dist: ${distances[distances.length - 1]}mi.`,
